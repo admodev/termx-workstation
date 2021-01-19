@@ -9,8 +9,19 @@ import java.util.Scanner;
 public class TermX {
 
     public static void createNewSession() {
-        //placeholder...
-        System.out.println("New session created!");
+        System.out.println("Please enter your credentials: ");
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Username: ");
+        String username = sc.nextLine();
+        System.out.println("Password: ");
+        String password = sc.nextLine();
+
+        if ("test".equals(username) && "test".equals(password)) {
+            System.out.println("New session created!");
+        } else {
+            System.out.println("Wrong credentials provided.");
+        }
     }
 
     public static void openNewFile() {
